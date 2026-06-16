@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Welcome to 05 Backend Integration
+***
 
-## Getting Started
+## Task
+The goal of this project is to build a gaming platform with backend features.
+The challenge is to connect the frontend and backend together. Users must be able to register, log in, view games, add games to their library, and see achievements and leaderboard data.
 
-First, run the development server:
 
-```bash
+## Description
+I solved this problem by using Next.js, Prisma, SQLite, and JWT authentication.
+The application has:
+User registration and login
+Protected dashboard page
+Game library system
+Achievement system
+Leaderboard system
+Admin role for adding new games
+The backend stores data in a SQLite database using Prisma ORM. JWT tokens and cookies are used for user authentication.
+
+## Installation
+
+Clone the project and install dependencies:
+npm install
+Generate Prisma client:
+npx prisma generate
+Create the database:
+npx prisma migrate dev --name init
+Add sample data:
+npx prisma db seed
+Start the development server:
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Usage
+Open the application in your browser:
+http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Test accounts:
+Admin:
+admin@gaming.com
+password123
 
-## Learn More
+Player:
+player@gaming.com
+password123
 
-To learn more about Next.js, take a look at the following resources:
+Features:
+Register a new account
+Login to the platform
+Browse available games
+Add games to your library
+View achievements
+Check the leaderboard
+Add new games as an admin
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### The Core Team
+@javadli_e
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<span><i>Made at <a href='https://qwasar.io'>Qwasar SV -- Software Engineering School</a></i></span>
+<span><img alt='Qwasar SV -- Software Engineering School's Logo' src='https://storage.googleapis.com/qwasar-public/qwasar-logo_50x50.png' width='20px' /></span>
