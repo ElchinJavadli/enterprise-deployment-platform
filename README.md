@@ -1,57 +1,54 @@
-# Welcome to 05 Backend Integration
+# Welcome to 06 Deployment
 ***
 
 ## Task
-The goal of this project is to build a gaming platform with backend features.
-The challenge is to connect the frontend and backend together. Users must be able to register, log in, view games, add games to their library, and see achievements and leaderboard data.
-
+The task is to deploy enterprise platform using modern tools.  
+The challenge is to make a working production deployment with CI/CD, environment variables, and database setup using Prisma and Netlify.
+We must also ensure the application works correctly in production like real-world software systems.
 
 ## Description
-I solved this problem by using Next.js, Prisma, SQLite, and JWT authentication.
-The application has:
-User registration and login
-Protected dashboard page
-Game library system
-Achievement system
-Leaderboard system
-Admin role for adding new games
-The backend stores data in a SQLite database using Prisma ORM. JWT tokens and cookies are used for user authentication.
+In this project, I built and deployed a full-stack web application using Next.js and TypeScript.
+I used Prisma to connect the application to a database.  
+I also fixed version problems and configured Prisma to work correctly in production.
+For deployment, I used:
+- GitHub for source control
+- GitHub Actions for CI (Continuous Integration)
+- Netlify for deployment
+This setup makes the project automatically build and deploy when I push code to GitHub.
 
 ## Installation
+To run this project locally, follow these steps:
 
-Clone the project and install dependencies:
+git clone https://github.com/ElchinJavadli/enterprise-deployment-platform.git
+cd enterprise-deployment-platform
 npm install
-Generate Prisma client:
+
+Then create a .env file
+
+Run Prisma generate:
 npx prisma generate
-Create the database:
-npx prisma migrate dev --name init
-Add sample data:
-npx prisma db seed
-Start the development server:
+
+Start the project:
 npm run dev
 
 
+
+
+
 ## Usage
-Open the application in your browser:
+After starting the project, open your browser and go to:
 http://localhost:3000
 
-Test accounts:
-Admin:
-admin@gaming.com
-password123
+The application will run in development mode.
+To build the project for production:
+npm run build
+npm start
+CI/CD Pipeline
+When code is pushed to GitHub:
+GitHub Actions runs tests and build
+Netlify automatically deploys the project
+This ensures the project is always updated and working in production.
 
-Player:
-player@gaming.com
-password123
-
-Features:
-Register a new account
-Login to the platform
-Browse available games
-Add games to your library
-View achievements
-Check the leaderboard
-Add new games as an admin
 
 ### The Core Team
 @javadli_e
