@@ -49,6 +49,11 @@ GitHub Actions runs tests and build
 Netlify automatically deploys the project
 This ensures the project is always updated and working in production.
 
+## Deployment
+
+The project is deployed on Netlify:
+https://enterprise-deployment-platform.netlify.app/
+
 
 ### The Core Team
 @javadli_e
