@@ -55,7 +55,15 @@ export async function POST(req: NextRequest) {
     });
 
     return response;
-  } catch (error) {
-    return NextResponse.json({ error: "Server error" }, { status: 500 });
-  }
+  } catch (error: any) {
+  console.error("LOGIN ERROR:", error);
+
+  return NextResponse.json(
+    {
+      error: error?.message || String(error),
+      stack: error?.stack,
+    },
+    { status: 500 }
+  );
+}
 }
