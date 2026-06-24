@@ -51,9 +51,8 @@ This ensures the project is always updated and working in production.
 
 ## Deployment
 
-The project is deployed on Netlify:
-https://enterprise-deployment-platform.netlify.app/
-
+The project is deployed on Vercel:
+https://enterprise-deployment-platform-tan.vercel.app/
 
 ### The Core Team
 @javadli_e
